@@ -1,0 +1,22 @@
+<h2>Lista de Libros</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Título</th>
+      <th>Referencia</th>
+      <th>Autor</th>
+      <th>Precio</th>
+      <th>Ubicación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let libro of libros">
+      <td>{{ libro.titulo }}</td>
+      <td>{{ libro.referencia }}</td>
+      <td>{{ libro.autor }}</td>
+      <td>{{ libro.precio }}</td>
+      <td>{{ libro.ubicacion }}</td>
+    </tr>
+  </tbody>
+</table>

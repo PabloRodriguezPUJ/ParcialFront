@@ -1,0 +1,26 @@
+<h2>Ingresar Libro</h2>
+
+<form>
+  <div>
+    <label>Título:</label>
+    <input [(ngModel)]="titulo" name="titulo" type="text">
+  </div>
+  <div>
+    <label>Referencia:</label>
+    <input [(ngModel)]="referencia" name="referencia" type="text">
+  </div>
+  <div>
+    <label>Autor:</label>
+    <input [(ngModel)]="autor" name="autor" type="text">
+  </div>
+  <div>
+    <label>Precio:</label>
+    <input [(ngModel)]="precio" name="precio" type="number">
+  </div>
+  <div>
+    <label>Ubicación:</label>
+    <input [(ngModel)]="ubicacion" name="ubicacion" type="text">
+  </div>
+
+  <button (click)="guardarLibro()">Guardar</button>
+</form>
