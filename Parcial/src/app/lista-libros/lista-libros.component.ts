@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { LibroService } from '../services/libro.service';
+import { Libro } from '../model/libro.model';
 
 @Component({
   selector: 'app-lista-libros',
@@ -7,8 +8,8 @@ import { LibroService } from '../services/libro.service';
   styleUrls: ['./lista-libros.component.css']
 })
 export class ListaLibrosComponent implements OnInit {
-  libros: any[];
-
+  libro: Libro=new Libro();
+  libros: Libro[]=[];
   constructor(private libroService: LibroService) { }
 
   ngOnInit() {
